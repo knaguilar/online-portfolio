@@ -1,0 +1,81 @@
+/** {
+	outline: red dotted thin;
+}*/
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+.container-fluid {
+	width: 100%;
+}
+/*---------------------Cover Section------------------------------------------*/
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.cover-section {
+	background:url('img/nyc.jpg') no-repeat center center;
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	/*for smaller screens*/
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.headline {
+	position: absolute;
+	align-self: flex-start;
+	z-index: 3;
+	padding-top: 5%;
+}
+
+#rounded-rec {
+	background: turquoise; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left,rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Safari 5.1-6*/
+  	background: -o-linear-gradient(right,rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Opera 11.1-12*/
+  	background: -moz-linear-gradient(right,rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Fx 3.6-15*/
+  	background: linear-gradient(to right, rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Standard*/
+
+	border-radius: 25px;
+	z-index: 1;
+	position: relative;
+	width: 100%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.navi {
+	position: absolute;
+	z-index: 3;
+	padding-bottom: 5%;
+	align-self: flex-end;
+}
+
+nav > ul {
+	list-style-type: none;
+}
+
+nav > ul > li {
+	display: inline;
+}
+
+/*-------------------Projects Section---------------------------------------------*/
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	text-align: center;
+}
