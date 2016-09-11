@@ -75,6 +75,10 @@ body, html, .cover {
     font-size: 25px;
 }
 
+.section {
+    padding: 0;
+}
+
 .container-fluid {
     display: flex;
     text-align: center;
@@ -92,9 +96,9 @@ body, html, .cover {
     display: none;
 }
 
-.img-border {
-    border-radius: 5px 20px 5px;
-    width: 25%;
+.imgs {
+    /*width: 25%;*/
+    margin: 0 auto;
     height: 25%;
 }
 
@@ -118,7 +122,8 @@ body, html, .cover {
 }
 
 #background1 {
-    background-image: url("img/neighborhood4x4.jpg");
+    /*background-image: url("img/map-mobile-lg.png");*/
+    background: blue;
 
     height: 100vh;
 
@@ -129,34 +134,37 @@ body, html, .cover {
 }
 
 #background2 {
-    background-image: url("img/arcade.jpg");
+    /*background-image: url("img/arcade-mobile-lg.png");*/
+    background: green;
 
     height: 100vh;
 
     background-attachment: fixed;
-    background-position: right center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #background3 {
-    background-image: url("img/sul.jpg");
+    /*background-image: url("img/sul-mobile-lg.png");*/
+    background: red;
 
     height: 100vh;
 
     background-attachment: fixed;
-    background-position: right center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #background4 {
-    background-image: url("img/feedtesting.jpg");
+    /*background-image: url("img/feedreader-mobile-lg.png");*/
+    background: orange;
 
     height: 100vh;
 
     background-attachment: fixed;
-    background-position: right center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -197,6 +205,7 @@ body, html, .cover {
     background-size: cover;
 }
 
+/*for laptop screens*/
 @media only screen and (min-width: 770px) {
     #about {
         height: 100%;
@@ -211,10 +220,15 @@ body, html, .cover {
 
     .name, .occupation {
 
-    width: 50%;
-    font-size: 60px;
+        width: 50%;
+        font-size: 60px;
+    }
+    .occupation {
+        font-size: 25px;
+    }
 }
-/*    TODO: change 
+
+/*    TODO: change
         top: 40%;
     right: 0;
     left: 0;
