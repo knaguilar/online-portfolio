@@ -1,0 +1,223 @@
+body, html {
+    box-sizing: border-box;
+}
+
+body, html, .cover {
+    height: 100%;
+    width: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('img/nyc.jpg');
+
+    /*opacity: .6;*/
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 40;
+}
+
+.background {
+    background: turquoise; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(50,158,155,0.9), rgba(50,147,178,0.9)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(50,158,155,0.9), rgba(50,147,178,0.9)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(50,158,155,0.9), rgba(50,147,178,0.9)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(50,158,155,0.9), rgba(50,147,178,0.9)); /*Standard*/
+
+    opacity: .9;
+}
+
+.parallax-projects {
+    /* The image used */
+    background: turquoise; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Standard*/
+
+    opacity: .9;
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.name, .occupation {
+    font-size: 40px;
+    color: #fff;
+    background-color: black;
+    /*width: 33%;*/
+    text-align: center;
+    /*padding-left: 8%;*/
+    opacity: .5;
+}
+
+.occupation {
+    font-size: 25px;
+}
+
+.container-fluid {
+    display: flex;
+    text-align: center;
+}
+
+.projects-title {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    left: 0;
+    margin: 5% auto;
+    font-size: 50px;
+    /*text-align: center;*/
+    color: #000;
+    display: none;
+}
+
+.img-border {
+    border-radius: 5px 20px 5px;
+    width: 25%;
+    height: 25%;
+}
+
+.background1 {
+    background-color: #32B29B;
+    opacity: .8;
+
+}
+
+.background2 {
+    background-color: #3293B2;
+    opacity: .8;
+}
+
+.project {
+    padding: 5%;
+    color: #000;
+    font-weight: bold;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background1 {
+    background-image: url("img/neighborhood4x4.jpg");
+
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background2 {
+    background-image: url("img/arcade.jpg");
+
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background3 {
+    background-image: url("img/sul.jpg");
+
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background4 {
+    background-image: url("img/feedtesting.jpg");
+
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about {
+    background-color: #32B29B;
+
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#city {
+    background-image: url("img/nyc.jpg");
+
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.preview1 {
+    background-image: url("img/contact-work.jpg");
+
+    opacity: .8;
+
+    /* Full height */
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 770px) {
+    #about {
+        height: 100%;
+    }
+
+    .projects-title {
+        top: 40%;
+        right: 0;
+        left: -50%;
+        margin: 0 auto;
+    }
+
+    .name, .occupation {
+
+    width: 50%;
+    font-size: 60px;
+}
+/*    TODO: change 
+        top: 40%;
+    right: 0;
+    left: 0;
+    margin: 5% auto;
+
+    to center when on big screens*/
