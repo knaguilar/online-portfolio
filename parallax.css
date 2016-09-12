@@ -5,6 +5,11 @@ body, html {
 body, html, .cover {
     height: 100%;
     width: 100%;
+    font-family: 'Dosis', sans-serif;
+}
+
+h3, .cover, .name, .contact-info {
+    font-family: 'Bad Script', cursive;
 }
 
 .parallax {
@@ -21,7 +26,6 @@ body, html, .cover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 40;
 }
 
 .background {
@@ -71,7 +75,7 @@ body, html, .cover {
 }
 
 .name, .occupation {
-    font-size: 40px;
+    font-size: 50px;
     color: #fff;
     background-color: black;
     /*width: 33%;*/
@@ -93,36 +97,6 @@ body, html, .cover {
     height: 30%;
     margin: 0 auto;
     padding-top: 5%;*/
-}
-
-
-#hexagon {
-    width: 100px;
-    height: 55px;
-    background: red;
-    position: relative;
-}
-#hexagon:before {
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid red;
-}
-#hexagon:after {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid red;
 }
 
 .container-fluid {
