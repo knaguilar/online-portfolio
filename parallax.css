@@ -26,12 +26,21 @@ body, html, .cover {
 
 .background {
     background: turquoise; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left,rgba(50,158,155,0.9), rgba(50,147,178,0.9)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(right,rgba(50,158,155,0.9), rgba(50,147,178,0.9)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right,rgba(50,158,155,0.9), rgba(50,147,178,0.9)); /*Fx 3.6-15*/
-    background: linear-gradient(to right, rgba(50,158,155,0.9), rgba(50,147,178,0.9)); /*Standard*/
+    background: -webkit-linear-gradient(left,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Standard*/
 
     opacity: .9;
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax-projects {
@@ -90,9 +99,9 @@ body, html, .cover {
     right: 0;
     left: 0;
     margin: 5% auto;
-    font-size: 50px;
+    /*font-size: 50px;*/
     /*text-align: center;*/
-    color: #000;
+    /*color: #000;*/
     display: none;
 }
 
@@ -123,7 +132,7 @@ body, html, .cover {
 
 #background1 {
     /*background-image: url("img/map-mobile-lg.png");*/
-    background: blue;
+    background: #065B65;
 
     height: 100vh;
 
@@ -135,7 +144,7 @@ body, html, .cover {
 
 #background2 {
     /*background-image: url("img/arcade-mobile-lg.png");*/
-    background: green;
+    background: #721244;
 
     height: 100vh;
 
@@ -147,7 +156,7 @@ body, html, .cover {
 
 #background3 {
     /*background-image: url("img/sul-mobile-lg.png");*/
-    background: red;
+    background: #065B65;
 
     height: 100vh;
 
@@ -159,7 +168,7 @@ body, html, .cover {
 
 #background4 {
     /*background-image: url("img/feedreader-mobile-lg.png");*/
-    background: orange;
+    background: #721244;
 
     height: 100vh;
 
@@ -169,8 +178,8 @@ body, html, .cover {
     background-size: cover;
 }
 
-#about {
-    background-color: #32B29B;
+.proj {
+    background-color: #059EB2;
 
     height: 100vh;
 
@@ -205,9 +214,19 @@ body, html, .cover {
     background-size: cover;
 }
 
+.contact-info {
+    background-color: #fff;
+    opacity: .7;
+
+    text-align: center;
+    /*width: 50%;*/
+    margin: 0 auto;
+    margin-top: 20%;
+}
+
 /*for laptop screens*/
-@media only screen and (min-width: 770px) {
-    #about {
+@media only screen and (min-width: 992px) {
+    .proj {
         height: 100%;
     }
 
@@ -225,6 +244,11 @@ body, html, .cover {
     }
     .occupation {
         font-size: 25px;
+    }
+
+    .contact-info {
+        margin-top: 10%;
+        width: 50%;
     }
 }
 
