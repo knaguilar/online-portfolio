@@ -88,6 +88,43 @@ body, html, .cover {
     padding: 0;
 }
 
+.self-pic {
+/*    width: 40%;
+    height: 30%;
+    margin: 0 auto;
+    padding-top: 5%;*/
+}
+
+
+#hexagon {
+    width: 100px;
+    height: 55px;
+    background: red;
+    position: relative;
+}
+#hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid red;
+}
+#hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid red;
+}
+
 .container-fluid {
     display: flex;
     text-align: center;
@@ -178,6 +215,26 @@ body, html, .cover {
     background-size: cover;
 }
 
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.img-circle {
+    object-fit: cover;
+    width: 175px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+}
+
 .proj {
     background-color: #059EB2;
 
@@ -249,6 +306,12 @@ body, html, .cover {
     .contact-info {
         margin-top: 10%;
         width: 50%;
+    }
+
+    .img-circle {
+        width: 275px;
+        height: 250px;
+        margin-top: 10%;
     }
 }
 
