@@ -12,6 +12,31 @@ h3, .cover, .name, .contact-info {
     font-family: 'Bad Script', cursive;
 }
 
+.nav {
+    /*position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 5%;*/
+    color: #fff;
+    text-align: center;
+    background-color: black;
+    opacity: .6;
+    z-index: 10;
+
+}
+
+.nav > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    display: inline;
+    font-size: 20px;
+    padding: 2%;
+}
+
 .parallax {
     /* The image used */
     background-image: url('img/nyc.jpg');
@@ -289,6 +314,11 @@ h3, .cover, .name, .contact-info {
         height: 250px;
         margin-top: 10%;
     }
+
+    /*.nav {
+        width: 50%;
+        margin: 0 auto;
+    }*/
 }
 
 /*    TODO: change
