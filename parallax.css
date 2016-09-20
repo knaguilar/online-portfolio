@@ -9,6 +9,12 @@ body {
 body, html {
     height: 100%;
     width: 100%;
+    color: #000;
+    font-family: 'Dosis', sans-serif;
+}
+
+h3, .header {
+    font-family: 'Bad Script', cursive;
 }
 /*remove left and right padding coming from bootstrap*/
 .col-xs-12 {
