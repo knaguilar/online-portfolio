@@ -13,7 +13,7 @@ body, html {
     font-family: 'Dosis', sans-serif;
 }
 
-h3, .header {
+h3, .header, .occupation {
     font-family: 'Bad Script', cursive;
 }
 /*remove left and right padding coming from bootstrap*/
@@ -44,6 +44,7 @@ h3, .header {
 }
 
 .header, .occupation {
+    width: 100%;
     font-size: 50px;
     color: #fff;
     background-color: black;
@@ -177,6 +178,14 @@ h3, .header {
 
 /*for laptop screens*/
 @media only screen and (min-width: 992px) {
+    .header, .occupation {
+        width: 50%;
+        font-size: 60px;
+    }
+    .occupation {
+        font-size: 25px;
+    }
+
     .fixed-title {
         top: 40%;
         right: 0;
