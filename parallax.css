@@ -18,11 +18,12 @@ body, html {
 .welcome-wrapper, .about-wrapper {
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 /*-------------------Welcome Section----------------------------------*/
 .welcome-wrapper {
     justify-content: center;
+    flex-direction: column;
 }
 
 /*nyc background image*/
@@ -50,6 +51,8 @@ body, html {
 
 /*-------------------About Section----------------------------------*/
 .about-wrapper {
+    flex-direction: row;
+    align-content: flex-start;
     text-align: center;
 }
 
@@ -79,8 +82,8 @@ body, html {
 
 /*----------------------Projects Section-------------------------------------*/
 .projects-wrapper {
+    display: flex;
     flex-wrap: wrap;
-     display: flex;
     flex-direction: row;
 }
 .fixed-title {
