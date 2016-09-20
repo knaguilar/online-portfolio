@@ -16,6 +16,7 @@ body, html {
 h3, .header, .occupation {
     font-family: 'Bad Script', cursive;
 }
+
 /*remove left and right padding coming from bootstrap*/
 .col-xs-12 {
     padding: 0;
@@ -26,6 +27,27 @@ h3, .header, .occupation {
     display: flex;
     flex-wrap: wrap;
 }
+
+/*---------------------nav bar-------------------------------------------*/
+nav {
+    color: #fff;
+    text-align: center;
+    background-color: black;
+    opacity: .6;
+
+}
+
+nav > ul {
+    padding-left: 0;
+    margin: 2%;
+}
+
+ul li {
+    display: inline;
+    font-size: 20px;
+    padding: 0 2%;
+}
+
 /*-------------------Welcome Section----------------------------------*/
 .welcome-wrapper {
     justify-content: center;
@@ -175,6 +197,14 @@ h3, .header, .occupation {
 }
 
 /*-------------------------media queries section---------------------------------*/
+@media only screen and (min-width: 767px) {
+    .navbar {
+        padding: 0;
+    }
+    nav > ul {
+        margin: 1%;
+    }
+}
 
 /*for laptop screens*/
 @media only screen and (min-width: 992px) {
