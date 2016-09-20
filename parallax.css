@@ -6,222 +6,51 @@ body {
     position: relative;
 }
 
-body, html, .cover {
+body, html {
     height: 100%;
     width: 100%;
-    font-family: 'Dosis', sans-serif;
+}
+/*remove left and right padding coming from bootstrap*/
+.col-xs-12 {
+    padding: 0;
 }
 
-h3, .cover, .name, .contact-info {
-    font-family: 'Bad Script', cursive;
-}
-
-.nav {
-    /*position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 5%;*/
-    color: #fff;
-    text-align: center;
-    background-color: black;
-    opacity: .6;
-    z-index: 10;
-
-}
-
-.nav > ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
-}
-
-ul li {
-    display: inline;
-    font-size: 20px;
-    padding: 2%;
-}
-
-.parallax {
-    /* The image used */
-    background-image: url('img/nyc.jpg');
-
-    /*opacity: .6;*/
-
-    /* Full height */
-    height: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.background {
-    background: turquoise; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Fx 3.6-15*/
-    background: linear-gradient(to right, rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Standard*/
-
-    opacity: .9;
-
-    /* Full height */
-    height: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax-projects {
-    /* The image used */
-    background: turquoise; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left,rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(right,rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right,rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Fx 3.6-15*/
-    background: linear-gradient(to right, rgba(0,118,127,0.9), rgba(83,43,191,0.7)); /*Standard*/
-
-    opacity: .9;
-
-    /* Full height */
-    height: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.cover {
+.welcome-wrapper, .about-wrapper {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+}
+/*-------------------Welcome Section----------------------------------*/
+.welcome-wrapper {
     justify-content: center;
-    align-content: center;
 }
 
-.name, .occupation {
+/*nyc background image*/
+.parallax-background {
+    background-image: url('img/nyc.jpg');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header, .occupation {
     font-size: 50px;
     color: #fff;
     background-color: black;
-    /*width: 33%;*/
     text-align: center;
-    /*padding-left: 8%;*/
     opacity: .5;
 }
-
+/*different size for occupation - smaller*/
 .occupation {
     font-size: 25px;
 }
 
-.section {
-    padding: 0;
-}
-
-.self-pic {
-/*    width: 40%;
-    height: 30%;
-    margin: 0 auto;
-    padding-top: 5%;*/
-}
-
-.container-fluid {
-    display: flex;
+/*-------------------About Section----------------------------------*/
+.about-wrapper {
     text-align: center;
-}
-
-.projects-title {
-    position: fixed;
-    top: 40%;
-    right: 0;
-    left: 0;
-    margin: 5% auto;
-    /*font-size: 50px;*/
-    /*text-align: center;*/
-    /*color: #000;*/
-    display: none;
-}
-
-.imgs {
-    /*width: 25%;*/
-    margin: 0 auto;
-    height: 25%;
-}
-
-.background1 {
-    background-color: #32B29B;
-    opacity: .8;
-
-}
-
-.background2 {
-    background-color: #3293B2;
-    opacity: .8;
-}
-
-.project {
-    padding: 5%;
-    color: #000;
-    font-weight: bold;
-    height: 100vh;
-    overflow: hidden;
-}
-
-#background1 {
-    /*background-image: url("img/map-mobile-lg.png");*/
-    background: #065B65;
-
-    height: 100vh;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#background2 {
-    /*background-image: url("img/arcade-mobile-lg.png");*/
-    background: #721244;
-
-    height: 100vh;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#background3 {
-    /*background-image: url("img/sul-mobile-lg.png");*/
-    background: #065B65;
-
-    height: 100vh;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#background4 {
-    /*background-image: url("img/feedreader-mobile-lg.png");*/
-    background: #721244;
-
-    height: 100vh;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.about {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .img-circle {
@@ -232,14 +61,47 @@ ul li {
     margin-top: 5%;
 }
 
-.info {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+.gradient-background {
+    background: turquoise; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Standard*/
+
+    opacity: .9;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.proj {
+/*----------------------Projects Section-------------------------------------*/
+.projects-wrapper {
+    flex-wrap: wrap;
+     display: flex;
+    flex-direction: row;
+}
+.fixed-title {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    left: 0;
+    margin: 5% auto;
+    display: none;
+}
+
+.project-background {
     background-color: #059EB2;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background1 {
+    background: #065B65;
 
     height: 100vh;
 
@@ -249,10 +111,10 @@ ul li {
     background-size: cover;
 }
 
-#city {
-    background-image: url("img/nyc.jpg");
+.background2 {
+    background: #721244;
 
-    height: 100%;
+    height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -260,13 +122,32 @@ ul li {
     background-size: cover;
 }
 
+.img-adjust {
+    margin: 0 auto;
+    height: 25%;
+}
+
+.projects {
+    padding: 5%;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+.left-project-height {
+    height: 100vh;
+}
+
+
+/*-------------------------contact section---------------------------------*/
 .preview1 {
     background-image: url("img/contact-work.jpg");
 
     opacity: .8;
 
     /* Full height */
-    height: 100%;
+    height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -277,40 +158,21 @@ ul li {
 .contact-info {
     background-color: #fff;
     opacity: .7;
-
     text-align: center;
-    /*width: 50%;*/
     margin: 0 auto;
     padding: 20%;
     margin-top: 5%;
 }
 
+/*-------------------------media queries section---------------------------------*/
+
 /*for laptop screens*/
 @media only screen and (min-width: 992px) {
-    .proj {
-        height: 100%;
-    }
-
-    .projects-title {
+    .fixed-title {
         top: 40%;
         right: 0;
         left: -50%;
         margin: 0 auto;
-    }
-
-    .name, .occupation {
-
-        width: 50%;
-        font-size: 60px;
-    }
-    .occupation {
-        font-size: 25px;
-    }
-
-    .contact-info {
-        margin-top: 10%;
-        width: 50%;
-        padding: 0;
     }
 
     .img-circle {
@@ -319,16 +181,9 @@ ul li {
         margin-top: 10%;
     }
 
-    /*.nav {
+    .contact-info {
+        margin-top: 10%;
         width: 50%;
-        margin: 0 auto;
-    }*/
+        padding: 0;
+    }
 }
-
-/*    TODO: change
-        top: 40%;
-    right: 0;
-    left: 0;
-    margin: 5% auto;
-
-    to center when on big screens*/
