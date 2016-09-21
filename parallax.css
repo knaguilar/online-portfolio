@@ -2,7 +2,7 @@ body, html {
     box-sizing: border-box;
 }
 
-body {
+body, .container-fluid {
     position: relative;
 }
 
@@ -27,14 +27,17 @@ h3, .header, .occupation {
     display: flex;
     flex-wrap: wrap;
 }
-
 /*---------------------nav bar-------------------------------------------*/
 nav {
     color: #fff;
     text-align: center;
     background-color: black;
     opacity: .6;
+}
 
+/*highlight link*/
+.active {
+    background-color: red;
 }
 
 nav > ul {
@@ -45,9 +48,22 @@ nav > ul {
 ul li {
     display: inline;
     font-size: 20px;
-    padding: 0 2%;
 }
 
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar {
+    text-align: center;
+    min-height: 0;
+}
+
+/*identify burger icon*/
+/*TODO: default mini menu*/
+.icon-bar {
+    background-color: purple;
+}
 /*-------------------Welcome Section----------------------------------*/
 .welcome-wrapper {
     justify-content: center;
@@ -71,13 +87,12 @@ ul li {
     color: #fff;
     background-color: black;
     text-align: center;
-    opacity: .5;
+    opacity: .6;
 }
 /*different size for occupation - smaller*/
 .occupation {
     font-size: 25px;
 }
-
 /*-------------------About Section----------------------------------*/
 .about-wrapper {
     flex-direction: row;
@@ -108,13 +123,13 @@ ul li {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /*----------------------Projects Section-------------------------------------*/
 .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
+
 .fixed-title {
     position: fixed;
     top: 40%;
@@ -130,6 +145,8 @@ ul li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    opacity: .8;
 }
 
 .background1 {
@@ -161,23 +178,19 @@ ul li {
 
 .projects {
     padding: 5%;
-    color: #000;
-    font-weight: bold;
+    color: #B19C02;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
+    font-size: 18px;
 }
 
 .left-project-height {
     height: 100vh;
 }
-
-
 /*-------------------------contact section---------------------------------*/
 .preview1 {
     background-image: url("img/contact-work.jpg");
-
     opacity: .8;
-
     /* Full height */
     height: 100vh;
 
@@ -195,7 +208,6 @@ ul li {
     padding: 20%;
     margin-top: 5%;
 }
-
 /*-------------------------media queries section---------------------------------*/
 @media only screen and (min-width: 767px) {
     .navbar {
