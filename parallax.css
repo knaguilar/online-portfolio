@@ -4,17 +4,14 @@
 
 body, html {
     box-sizing: border-box;
-}
-
-body, .container-fluid {
-    position: relative;
-}
-
-body, html {
     height: 100%;
     width: 100%;
     color: #000;
     font-family: 'Dosis', sans-serif;
+}
+
+body, .container-fluid {
+    position: relative;
 }
 
 h3, .header, .occupation {
@@ -68,14 +65,12 @@ ul li {
     font-size: 20px;
 }
 
-
 .navbar {
     text-align: center;
     min-height: 0;
 }
 
 /*identify burger icon*/
-/*TODO: default mini menu*/
 .icon-bar {
     background-color: purple;
 }
@@ -88,12 +83,6 @@ ul li {
 /*nyc background image*/
 .parallax-background {
     background-image: url('img/nyc.jpg');
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .header, .occupation {
@@ -124,14 +113,20 @@ ul li {
 }
 
 .gradient-background {
-    background: turquoise; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Fx 3.6-15*/
-    background: linear-gradient(to right, rgba(6,91,101,0.9), rgba(114,18,68,0.9)); /*Standard*/
-
+    background: turquoise;
+ /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(6,91,101,0.9), rgba(114,18,68,0.9));
+ /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9));
+ /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(6,91,101,0.9), rgba(114,18,68,0.9));
+ /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(6,91,101,0.9), rgba(114,18,68,0.9));
+ /*Standard*/
     opacity: .9;
+}
 
+.fixed-background {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -156,49 +151,31 @@ ul li {
 
 .project-background {
     background-color: #059EB2;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
     opacity: .8;
 }
 
 .background1 {
     background: #065B65;
-
     min-height: 100vh;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .background2 {
     background: #721244;
-
     min-height: 100vh;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .img-adjust {
     margin: 0 auto;
-    /*height: 5%;*/
+    /*height: 5%;*/;
 }
 
 .projects {
     padding: 5%;
     color: #B19C02;
     text-align: center;
-    overflow: auto;
+    /*overflow: auto;*/
     font-size: 18px;
     min-height: 100vh;
-
     /*either make the project window scrollable when text doesn't fit or make the height bigger and min-height: 100vh for laptops*/
 }
 
@@ -209,13 +186,7 @@ ul li {
 .preview1 {
     background-image: url("img/contact-work.jpg");
     opacity: .8;
-    /* Full height */
     height: 100vh;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .contact-info {
