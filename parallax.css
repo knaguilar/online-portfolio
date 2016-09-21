@@ -1,3 +1,7 @@
+/** {
+    outline: #00FF00 dotted thin;
+}*/
+
 body, html {
     box-sizing: border-box;
 }
@@ -48,6 +52,12 @@ nav {
     background-color: red;
 }
 
+.navbar-toggle {
+    /*left or center menu button*/
+    float: none;
+    margin-left: 15px;
+}
+
 nav > ul {
     padding-left: 0;
     margin: 2%;
@@ -58,10 +68,7 @@ ul li {
     font-size: 20px;
 }
 
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
+
 .navbar {
     text-align: center;
     min-height: 0;
@@ -223,6 +230,11 @@ ul li {
     }
     nav > ul {
         margin: 1%;
+    }
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
     }
 }
 
