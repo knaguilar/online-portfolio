@@ -167,7 +167,7 @@ ul li {
 .background1 {
     background: #065B65;
 
-    height: 100vh;
+    min-height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -178,7 +178,7 @@ ul li {
 .background2 {
     background: #721244;
 
-    height: 100vh;
+    min-height: 100vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -188,7 +188,7 @@ ul li {
 
 .img-adjust {
     margin: 0 auto;
-    height: 25%;
+    /*height: 5%;*/
 }
 
 .projects {
@@ -197,10 +197,13 @@ ul li {
     text-align: center;
     overflow: auto;
     font-size: 18px;
+    min-height: 100vh;
+
+    /*either make the project window scrollable when text doesn't fit or make the height bigger and min-height: 100vh for laptops*/
 }
 
 .left-project-height {
-    height: 100vh;
+    min-height: 100vh;
 }
 /*-------------------------contact section---------------------------------*/
 .preview1 {
