@@ -36,7 +36,15 @@ nav {
 }
 
 /*highlight link*/
-.active {
+.nav > li > a:focus {
+    background-color: transparent;
+}
+
+.nav > li > a:hover {
+    background-color: blue;
+}
+
+.nav > li > a:active, .active {
     background-color: red;
 }
 
