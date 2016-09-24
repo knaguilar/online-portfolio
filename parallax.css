@@ -4,9 +4,10 @@
 
 body, html {
     box-sizing: border-box;
+    font-size: 1em;
     height: 100%;
     width: 100%;
-    color: #000;
+    color: rgba(6,91,101,0.9);
     font-family: 'Dosis', sans-serif;
 }
 
@@ -16,6 +17,10 @@ body, .container-fluid {
 
 h3, .header, .occupation {
     font-family: 'Bad Script', cursive;
+}
+
+h3 {
+    font-size: 2.25em;
 }
 
 /*remove left and right padding coming from bootstrap*/
@@ -30,23 +35,22 @@ h3, .header, .occupation {
 }
 /*---------------------nav bar-------------------------------------------*/
 nav {
-    color: #fff;
     text-align: center;
-    background-color: black;
+    background-color: #080808;
     opacity: .6;
 }
 
 /*highlight link*/
+.nav > li > a {
+    color: rgba(6,91,101,0.9);
+}
+
 .nav > li > a:focus {
     background-color: transparent;
 }
 
-.nav > li > a:hover {
-    background-color: blue;
-}
-
-.nav > li > a:active, .active {
-    background-color: red;
+.nav > li > a:hover, .nav > li > a:active, .active {
+    background-color: #fff;
 }
 
 .navbar-toggle {
@@ -87,15 +91,17 @@ ul li {
 
 .header, .occupation {
     width: 100%;
-    font-size: 50px;
-    color: #fff;
     background-color: black;
     text-align: center;
-    opacity: .6;
+    opacity: .8;
+}
+
+.header {
+    font-size: 3.375em;
 }
 /*different size for occupation - smaller*/
 .occupation {
-    font-size: 25px;
+    font-size: 1.5em;
 }
 /*-------------------About Section----------------------------------*/
 .about-wrapper {
@@ -159,9 +165,17 @@ ul li {
     min-height: 100vh;
 }
 
+.background1 > h3 {
+    color: #721244;
+}
+
 .background2 {
     background: #721244;
     min-height: 100vh;
+}
+
+.background2 > h3 {
+    color: #065B65;
 }
 
 .img-adjust {
@@ -179,13 +193,22 @@ ul li {
     /*either make the project window scrollable when text doesn't fit or make the height bigger and min-height: 100vh for laptops*/
 }
 
+.projects > button {
+    background-color: #B19C02;
+    color: #065B65;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
 .left-project-height {
     min-height: 100vh;
 }
 /*-------------------------contact section---------------------------------*/
 .preview1 {
     background-image: url("img/contact-work.jpg");
-    opacity: .8;
     height: 100vh;
 }
 
@@ -216,10 +239,6 @@ ul li {
 @media only screen and (min-width: 992px) {
     .header, .occupation {
         width: 50%;
-        font-size: 60px;
-    }
-    .occupation {
-        font-size: 25px;
     }
 
     .fixed-title {
