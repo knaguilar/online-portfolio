@@ -218,8 +218,12 @@ ul li {
     opacity: .7;
     text-align: center;
     margin: 0 auto;
-    padding: 20%;
+    padding: 15%;
     margin-top: 5%;
+}
+
+.contact-info > ul {
+    padding-left: 0;
 }
 
 .contact-info > ul > a {
