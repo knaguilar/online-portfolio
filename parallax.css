@@ -7,7 +7,7 @@ body, html {
     font-size: 1em;
     height: 100%;
     width: 100%;
-    color: rgba(6,91,101,0.9);
+    color: #B19C02;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -17,6 +17,7 @@ body, .container-fluid {
 
 h3, .header, .occupation {
     font-family: 'Bad Script', cursive;
+    color: rgba(6,91,101,0.9);
 }
 
 h3 {
@@ -185,7 +186,6 @@ ul li {
 
 .projects {
     padding: 5%;
-    color: #B19C02;
     text-align: center;
     /*overflow: auto;*/
     font-size: 18px;
