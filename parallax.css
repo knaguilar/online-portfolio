@@ -218,7 +218,7 @@ ul li {
     opacity: .7;
     text-align: center;
     margin: 0 auto;
-    padding: 15%;
+    padding: 5%;
     margin-top: 5%;
 }
 
@@ -227,7 +227,7 @@ ul li {
 }
 
 .contact-info > ul > a {
-    padding: 0 5%;
+    padding: 2%;
 }
 /*-------------------------media queries section---------------------------------*/
 @media only screen and (min-width: 767px) {
@@ -264,9 +264,9 @@ ul li {
     }
 
     .contact-info {
-        margin-top: 10%;
+        /*margin-top: 10%;*/
         width: 50%;
-        padding: 0;
+        /*padding: 5%;*/
     }
 }
 
