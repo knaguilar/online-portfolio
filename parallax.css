@@ -157,8 +157,9 @@ ul li {
 }
 
 .project-background {
-    background-color: #059EB2;
-    opacity: .8;
+    background-image: url('img/code.jpg');
+    min-height: 100vh;
+    /*opacity: .8;*/
 }
 
 .background1 {
@@ -201,10 +202,6 @@ ul li {
     text-decoration: none;
     cursor: pointer;
     border-radius: 8px;
-}
-
-.left-project-height {
-    min-height: 100vh;
 }
 /*-------------------------contact section---------------------------------*/
 .preview1 {
