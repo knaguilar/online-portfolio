@@ -37,13 +37,13 @@ h3 {
 /*---------------------nav bar-------------------------------------------*/
 nav {
     text-align: center;
-    background-color: #080808;
+    background-color: #fff;
     opacity: .8;
 }
 
 /*highlight link*/
 .nav > li > a {
-    color: rgba(6,91,101,0.9);
+    color: #065B65;
 }
 
 .nav > li > a:focus {
@@ -51,7 +51,7 @@ nav {
 }
 
 .nav > li > a:hover, .nav > li > a:active, .active {
-    background-color: #fff;
+    background-color: #B8B8B8;
 }
 
 .navbar-toggle {
@@ -92,7 +92,7 @@ ul li {
 
 .header, .occupation {
     width: 100%;
-    background-color: black;
+    background-color: #fff;
     text-align: center;
     opacity: .8;
 }
