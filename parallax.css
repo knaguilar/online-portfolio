@@ -193,7 +193,7 @@ ul li {
     /*either make the project window scrollable when text doesn't fit or make the height bigger and min-height: 100vh for laptops*/
 }
 
-.projects > button {
+.projects > .link {
     background-color: #B19C02;
     color: #065B65;
     border: none;
