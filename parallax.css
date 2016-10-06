@@ -280,15 +280,15 @@ ul li {
     }
 
     .parallax-background {
-        background-image: url('images/extra/nyc-compressed.jpg');
+        background-image: url('images/extra/nyc.jpg');
     }
 
     .project-background {
-        background-image: url('images/extra/project-compressed.jpg');
+        background-image: url('images/extra/project.jpg');
     }
 
     .preview1 {
-        background-image: url("images/extra/laptop-compressed.jpg");
+        background-image: url("images/extra/laptop.jpg");
     }
 }
 
