@@ -87,7 +87,7 @@ ul li {
 
 /*nyc background image*/
 .parallax-background {
-    background-image: url('images/mobile/nyc-mobile.jpg');
+    background-image: url('images/mobile/nyc-compressed.jpg');
 }
 
 .header, .occupation {
