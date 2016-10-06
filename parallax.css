@@ -87,7 +87,7 @@ ul li {
 
 /*nyc background image*/
 .parallax-background {
-    background-image: url('img/nyc.jpg');
+    background-image: url('images/mobile/nyc-mobile.jpg');
 }
 
 .header, .occupation {
@@ -157,7 +157,7 @@ ul li {
 }
 
 .project-background {
-    background-image: url('img/project.jpg');
+    background-image: url('images/mobile/project-mobile.jpg');
     min-height: 100vh;
     /*background-position: left;*/
     /*opacity: .8;*/
@@ -206,7 +206,7 @@ ul li {
 }
 /*-------------------------contact section---------------------------------*/
 .preview1 {
-    background-image: url("img/laptop.jpg");
+    background-image: url("images/mobile/laptop-mobile.jpg");
     height: 100vh;
 }
 
@@ -240,6 +240,18 @@ ul li {
         display: inline-block;
         float: none;
     }
+
+    .parallax-background {
+        background-image: url('images/large/nyc.jpg');
+    }
+
+    .project-background {
+        background-image: url('images/large/project.jpg');
+    }
+
+.preview1 {
+    background-image: url("images/large/laptop.jpg");
+    }
 }
 
 /*for laptop screens*/
@@ -266,14 +278,27 @@ ul li {
         width: 50%;
         /*padding: 5%;*/
     }
+
+    .parallax-background {
+        background-image: url('images/extra/nyc.jpg');
+    }
+
+    .project-background {
+        background-image: url('images/extra/project.jpg');
+    }
+
+    .preview1 {
+        background-image: url("images/extra/laptop.jpg");
+    }
 }
 
 @media only screen and (min-width: 1441px) {
-body, html {
-    font-size: 1.6em;
-}
+    body, html {
+        font-size: 1.6em;
+    }
 
-.img-circle {
-    height: 80%;
-    width: 80%;
+    .img-circle {
+        height: 80%;
+        width: 80%;
+    }
 }
