@@ -118,6 +118,9 @@ ul li {
     margin: 0 auto;
     margin-top: 5%;
 }
+.blurp {
+    padding: 5%;
+}
 
 .gradient-background {
     background: turquoise;
